@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.caixa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+    padding: 10px;
+}
+
+#imagemForca{
+    padding: 10px;
+    margin-left: 85px;
+}
+
+#painel{
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+
+.letras{
+    border-bottom: 3px solid blue;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+table{
+    background: rgba(0, 0, 0, 0.7);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+   
+    
+}
+.botoes{
+    background: rgb(252, 1, 210);
+    color: white;
+    transition: 0.4s;
+}
+
+.botoes:hover{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.botaoMaior{
+    width: 131px;
+}
