@@ -25,7 +25,7 @@ main{
 
 #imagemForca{
     padding: 10px;
-    margin-left: 85px;
+   
 }
 
 #painel{
@@ -69,8 +69,7 @@ button{
     width: 40px;
     height: 40px;
     margin: 3px;
-   
-    
+    cursor: pointer;
 }
 .botoes{
     background: rgb(252, 1, 210);
@@ -80,8 +79,20 @@ button{
 
 .botoes:hover{
     background: rgb(1, 139, 252);
+    transform: scale(1.1);
 }
 
 .botaoMaior{
     width: 131px;
+}
+
+#dica{
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 1px solid grey;
 }
