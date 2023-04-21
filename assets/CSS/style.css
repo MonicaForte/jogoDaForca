@@ -28,11 +28,11 @@ main{
 */
 
 #imagemForca{
-    background: url(../imagens/imagem-1.png) no-repeat center center;
+    background: url(../imagens/imagem-1.png) no-repeat center;
     width: 217px;
     height: 265px;
     padding: 10px;
-    margin-left: 55PX;
+    margin: auto;
 }
 
 /*
@@ -72,6 +72,8 @@ button{
     margin: 1.5px;
     padding: 3px;
     cursor: pointer;
+    border: 1px solid rgb(182, 5, 152);
+    box-shadow: 5px 5px 5px rgb(182, 5, 152);
 }
 
 .botoes{
@@ -85,13 +87,15 @@ button{
 }
 
 .botoes:hover{
-    background: rgb(1, 139, 252);
-    transform: scale(1.1);
+    background: rgb(182, 5, 152);
+    transform: scale(1.02);
 }
+
 
 .botaoMaior{
     width: 83px;
 }
+
 
 /*
       ******* Seção dicas ******* 
@@ -115,4 +119,81 @@ button{
 h1{
     font-size: 1em;
     text-align: center;
+}
+
+/*
+      ******* Responsive breakpoints ******* 
+*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px){
+    button{
+        width: 25px;
+        height: 30px;
+    }
+    .botoes{
+        font-size: 0.8em;
+    }
+    .botaoMaior{
+        width: 83px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+    button{
+    width: 35px;
+    height: 40px;
+    }
+    .botoes{
+        font-size: 1em;
+    }
+    .botaoMaior{
+        width: 110px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+    button{
+    width: 40px;
+    height: 45px;
+    }
+    .botoes{
+        font-size: 1.1em;
+    }
+    .botaoMaior{
+        width: 125px;
+    }
+   
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+    button{
+        width: 45px;
+        height: 50px;
+        margin: 1.8px;
+    }
+    .botoes{
+        font-size: 1.1em;
+    }
+    .botaoMaior{
+        width: 140px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+    button{
+        width: 50px;
+        height: 55px;
+        margin: 2px;
+    }
+    .botoes{
+        font-size: 1.1em;
+    }
+    .botaoMaior{
+        width: 155px;
+    }
 }
