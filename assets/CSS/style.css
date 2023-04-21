@@ -23,17 +23,24 @@ main{
     padding: 10px;
 }
 
+/*
+      ******* Seção Imagens ******* 
+*/
+
 #imagemForca{
     background: url(../imagens/imagem-1.png) no-repeat center center;
-    width: 220px;
-    height: 270px;
+    width: 217px;
+    height: 265px;
     padding: 10px;
-    margin-left: 135px;
-    
+    margin-left: 55PX;
 }
 
+/*
+      ******* Seção Palavras ******* 
+*/
+
 #painel{
-    padding: 10px;
+    
     margin: 30px 15px;
     display: flex;
     flex-direction: row;
@@ -45,7 +52,7 @@ main{
 
 .letras{
     border-bottom: 3px solid rgb(1, 172, 252);
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
     float: left;
     letter-spacing: 2px;
@@ -54,30 +61,26 @@ main{
     margin-right: 2px;
 }
 
-h1{
-    font-size: 1em;
-    text-align: center;
-}
+/*
+      ******* Seção teclado ******* 
+*/
 
-
-
-table{
-    background: rgba(0, 0, 0, 0.7);
-    width: auto;
-    height: auto;
-    border-radius: 5px;
-    
-}
 
 button{
-    width: 40px;
-    height: 40px;
-    margin: 3px;
+    width: 25px;
+    height: 30px;
+    margin: 1.5px;
+    padding: 3px;
     cursor: pointer;
 }
+
 .botoes{
     background: rgb(252, 1, 210);
     color: white;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 0.4s;
 }
 
@@ -87,16 +90,29 @@ button{
 }
 
 .botaoMaior{
-    width: 131px;
+    width: 83px;
 }
+
+/*
+      ******* Seção dicas ******* 
+*/
 
 #dica{
     margin: 40px;
     text-align: center;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
     border-bottom: 1px solid grey;
+}
+
+/*
+      ******* Tipografias ******* 
+*/
+
+h1{
+    font-size: 1em;
+    text-align: center;
 }
