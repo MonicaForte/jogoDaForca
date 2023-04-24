@@ -1,2 +1,2 @@
 # jogoDaForca
-Ptojeto jogo da forca para portfólio pessoal
+Projeto jogo da forca para portfólio pessoal
