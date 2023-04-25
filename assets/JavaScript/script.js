@@ -30,19 +30,12 @@ function gerarPalavraAleatoria(categoria) {
     case 'objetos':
         palavras = objetos;
         break;
-
-    default:
-      return 'Categoria inválida';
   }
-  
-  // Seleciona aleatoriamente uma palavra do array
-  const indice = Math.floor(Math.random() * palavras.length);
-  return palavras[indice];
 }
 
-let palavra = gerarPalavraAleatoria('frutas', 'animais', 'lugares', 'cores', 'objetos');
+let palavra = gerarPalavraAleatoria[Math.floor(Math.random() * palavras.length)];
 
-let palavraEscondida = "_".repeat(palavra.length);
+let palavraEscondida = "_ ".repeat(palavra.length);
 
 let palavraParaMostrar = document.getElementById("painel");
 palavraParaMostrar.innerHTML = palavraEscondida;
