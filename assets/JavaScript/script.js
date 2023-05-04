@@ -1,37 +1,9 @@
-// Criação das categorias
-const frutas = ['bergamota', 'maracujá', 'laranja', 'fruta-do-conde', 'abacaxi'];
-const animais = ['baleia', 'rinoceronte', 'tigre-de-bengala', 'dragão de komodo', 'papagaio'];
-const lugares = ['cataratas do iguaçu', 'curitiba', 'são paulo', 'arraial do cabo', 'lisboa'];
+// Criação da categoria
 const cores = ['dourado', 'azul marinho', 'esmeralda', 'marsala', 'magenta'];
-const objetos = ['caneta', 'marca-texto', 'escada', 'cadeira', 'garfo'];
+const palavraSecreta =  cores[Math.floor(Math.random() * cores.length)];
 
-// Função para gerar uma palavra aleatória da categoria escolhida
-function gerarPalavraAleatoria(categoria) {
-  let palavras;
-  
-  // Para selecionar o array de palavras de acordo com a categoria
-  switch(categoria) {
-    case 'frutas':
-      palavras = frutas;
-      break;
 
-    case 'animais':
-        palavras = animais;
-        break;
-
-    case 'lugares':
-        palavras = lugares;
-        break;
-
-    case 'cores':
-        palavras = cores;
-        break;
-
-    case 'objetos':
-        palavras = objetos;
-        break;
-  }
-}
+/*
 
 let palavra = gerarPalavraAleatoria[Math.floor(Math.random() * palavras.length)];
 
@@ -106,3 +78,53 @@ function insert(letra) {
       botao.setAttribute("disabled", true);
     }
 }
+
+function atualizarForca() {
+  if (erros == 1) {
+      forcaDiv.style.backgroundImage = "url('../imagens/imagem-2.png')";
+  } else if (erros == 2) {
+      forcaDiv.style.backgroundImage = "url('../imagens/imagem-3.png')";
+  } else if (erros == 3) {
+      forcaDiv.style.backgroundImage = "url('../imagens/imagem-4.png')";
+  } else if (erros == 4) {
+      forcaDiv.style.backgroundImage = "url('../imagens/imagem-5.png')";
+  } else if (erros == 5) {
+      forcaDiv.style.backgroundImage = "url('../imagens/imagem-6.png')";
+  } else if (erros == 6) {
+      forcaDiv.style.backgroundImage = "url('../imagens/imagem-7.png')";
+      alert('Você perdeu!');
+  }else {
+      erros++;
+      atualizarForca();
+  }
+} 	
+
+letraDiv.classList.add('selecionada');
+letrasDiv.appendChild(letraDiv);
+
+if (letrasSelecionadas.length == palavraSorteada.length) {
+  alert('Você ganhou!');
+}
+
+letrasDiv.appendChild(letraDiv);
+
+exibirPalavra();
+exibirLetras();
+
+if (palavraSorteada.includes(letras[i])) {
+  for (let j = 0; j < palavraSorteada.length; j++) {
+    if (palavraSorteada[j] === letras[i]) {
+      palavraEscondida[j] = letras[i];
+    }
+  }
+  palavraDiv.innerHTML = '';
+  for (let k = 0; k < palavraEscondida.length; k++) {
+    let letraDiv = document.createElement('div');
+    letraDiv.classList.add('letra');
+    letraDiv.innerHTML = palavraEscondida[k];
+    palavraDiv.appendChild(letraDiv);
+  }
+} else {
+  erros++;
+  atualizarForca();
+}*/
