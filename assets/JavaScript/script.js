@@ -3,7 +3,7 @@ const cores = ['dourado', 'azul marinho', 'esmeralda', 'marsala', 'magenta'];
 const palavraSecreta =  cores[Math.floor(Math.random() * cores.length)];
 
 
-/*
+
 
 let palavra = gerarPalavraAleatoria[Math.floor(Math.random() * palavras.length)];
 
